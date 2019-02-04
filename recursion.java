@@ -36,6 +36,9 @@ public class recursion{
   }
 
    /*As Per classwork*/
-   public static ArrayList<Integer> makeAllSums(){
+   public static ArrayList<Integer> makeAllSums(int n){
+     ArrayList<Integer> sums = new ArrayList<Integer>();
+     makeAllSumsH(n,0,sums);
+     return sums;
    }
 }
