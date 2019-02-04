@@ -24,7 +24,7 @@ public class recursion{
     *precondition: n is non-negative
     */
    public static int fib(int n){
-
+     return fibH(n,0,1,0);
    }
 
    /*As Per classwork*/
