@@ -27,6 +27,14 @@ public class recursion{
      return fibH(n,0,1,0);
    }
 
+  public static int fibH(int target, int firstn , int secondn , int current){
+    if (current >= target){
+      return firstn;
+    }else{
+      return fibH(target,secondn,firstn + secondn, current + 1);
+    }
+  }
+
    /*As Per classwork*/
    public static ArrayList<Integer> makeAllSums(){
    }
