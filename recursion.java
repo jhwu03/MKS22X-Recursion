@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 public class recursion{
   /*You may write additional private methods */
 
@@ -41,4 +42,13 @@ public class recursion{
      makeAllSumsH(n,0,sums);
      return sums;
    }
+
+  public static void makeAllSumsH(int n, int partial, ArrayList<Integer> sums) {
+    if (n > 0) {
+      makeAllSumsH(n - 1, partial, sums);
+      makeAllSumsH(n - 1, partial + n, sums);
+    } else {
+      sums.add(partial);
+    }
+  }
 }
